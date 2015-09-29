@@ -16,5 +16,43 @@
         
         <h1>Kontakt</h1>
         
+        <form action="http://webproduction.standout.se/form.php" method="POST">
+            <Fieldset>
+                <h2>Undersökning: Vilket namn samt spel föredrar du?</h2>
+                
+                <label>Nickname:</label>
+                    <select name="errand">
+                            <option value="Cute AF" selected>Cute AF</option>
+                            <option value="Fishmoose">Fishmoose</option>
+                            <option value="TLI">TLI</option>
+                            <option value="Fusks">Fusks</option>
+                    </select>
+                    <p></p>
+                <label>Vilket spel?</label>
+                    <select  name="title">
+                        <option value="CS:GO" selected>CS:GO</option>
+                        <option value="Dota2">Dota2</option>
+                        <option value="World of Warcraft">WoW</option>
+                        <option value="Heroes of the Storm">HotS</option>
+                    </select>
+                    <p></p>
+                <textarea placeholder="Motivera ditt svar" name="question" rows="5" cols="30" required></textarea>
+            </Fieldset>
+            <Fieldset>
+                <legend>Vill du veta resultatet?</legend>
+                    <label>Kontakta mig via mail</label>
+                        <input type="checkbox" name=contact[] value="mail">
+                    <label> Kontakta mig via telefon</label> 
+                        <input type="checkbox" name=contact[] value="telefon">
+                    <p></p>
+                    <input type="email" name="inputmail" placeholder="Ange din email...">
+                    <input type="tel" name="inputtel" placeholder="Ange ditt telefonnummer">
+                    <p></p>
+                    <input type="submit" value="Skicka svar" />
+                
+            </Fieldset>
+            
+        </form>
+        
     </body>
 </html>
