@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+     
+    <head>
+        <meta charset="utf-8" />
+        <title>Laboration 2 i Java</title>
+        <link href="mincss.css" rel="stylesheet">
+    </head>
+    
+<body>
+    
+    <h1>Fyll i din betalningsplan</h1>
+    <form name="form" action="" method="POST" > 
+    
+        <p> 
+        <label> Förnamn:</label>
+        </p>
+        <input type="text" name="fNamn" id="fNamn" />
+        
+        <p>
+        <label> Efternamn:</label>
+        </p>
+        <input type="text" name="eNamn" id="eNamn" /> 
+        
+        <p>
+        <label> Postnummer:</label>
+        </p>
+        <input type="text" name="pNummer" id="pNummer" /> 
+        
+        <p>
+        <label> E-post:</label>
+        </p>
+        <input type="text" name="ePost" id="ePost" /> 
+        
+        <p>
+        <label>Prismodell:</label>
+        </p>
+        <select name="prisModell" id="prisModell">
+        <option value="Låg"> Låg </option>
+        <option value="Mellan"> Mellan </option>
+        <option value="Hög"> Hög </option>
+        </select>
+        <label for="select">
+        <p></p>
+    </form>
+    <div class="box">
+        <button disabled type="button" id="knapp">Genomför Köp</button>
+    </div>
+    <div id="valideringPopUp" class="overlay">
+        <div class="popup">
+    		<h3>Vänligen bekräfta ditt köp</h3>
+    		<form id="form">
+        	<div id="popupText">
+        	    <p id="firstName" namn="Förnamn">Förnamn:</p>
+        	    <p id="lastName" namn="Efternamn">Efternamn:</p>
+        	    <p id="postNumber" namn="Postnummer">Postnummer:</p>
+        	    <p id="ePostText" namn="Epostadress">E-mail:</p>
+        	    <p id="prisModellVal" namn="Prismodell">Prismodell:</p>
+        	</div>
+        	</form>
+        	<button id="sendPopUp" type="button">Skicka formulär</button>
+        	<button id="closePopUp" type="button">Tillbaka</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../java/laboration2.js"></script> 
+</body>
+</html>
