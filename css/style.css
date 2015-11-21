@@ -1,6 +1,6 @@
 #header {
-    border: 1px solid black;
 	background-image: url("../css/pics/sallogga.png");
+    border: 1px solid black;
 	background-repeat: no-repeat;
 	background-size: 120px;
 	background-position:right;
@@ -29,7 +29,7 @@ body {
 	color: white;
     border: 1px solid black;
     text-align: center;
-    background-image: url("../css/pics/asd.jpeg");
+    background-image: url("../css/pics/watermelon.jpeg");
 	background-size: 200px;
 
 }
@@ -38,9 +38,6 @@ body {
     background-color: #4C81BF;
 	border: 1px solid black;
 	text-align:center;
-	background-position:bottom left;
-	background-repeat:no-repeat;
-	background-image: url("../css/pics/asdf.jpg");
 }
 
 #menu ul li a {
