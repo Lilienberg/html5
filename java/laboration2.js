@@ -165,22 +165,22 @@ valideringKnapp.onclick = function()
     var inputPrisModell = document.createTextNode(" " + prisModell.value);
     prisModellTextOn.appendChild(inputPrisModell);
     
-    
     valideringPopUp.style.display = "block";
-closePopUp.onclick = function()
-{
-    valideringPopUp.style.display = "none";
-    firstNameTextOn.removeChild(inputFirstName);
-    lastNameTextOn.removeChild(inputLastName);
-    postNumberTextOn.removeChild(inputPostNumber);
-    ePostTextOn.removeChild(inputEpostText);
-    prisModellTextOn.removeChild(inputPrisModell);
-}
-
-sendPopUp.onclick = function()
-{
-    submitForm.submit();
-}
+    
+        closePopUp.onclick = function()
+        {
+            valideringPopUp.style.display = "none";
+            firstNameTextOn.removeChild(inputFirstName);
+            lastNameTextOn.removeChild(inputLastName);
+            postNumberTextOn.removeChild(inputPostNumber);
+            ePostTextOn.removeChild(inputEpostText);
+            prisModellTextOn.removeChild(inputPrisModell);
+        }
+    
+        sendPopUp.onclick = function()
+        {
+            submitForm.submit();
+        }
 }
 // Slut Pop Up knappar
 // ---------------------------------------------------------------

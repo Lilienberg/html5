@@ -10,7 +10,7 @@
 <body>
     
     <h1>Fyll i din betalningsplan</h1>
-    <form name="form" action="" method="POST" > 
+    <form name="form"> 
     
         <p> 
         <label> Förnamn:</label>
@@ -40,8 +40,6 @@
         <option value="Mellan"> Mellan </option>
         <option value="Hög"> Hög </option>
         </select>
-        <label for="select">
-        <p></p>
     </form>
     <div class="box">
         <button disabled type="button" id="knapp">Genomför Köp</button>
@@ -49,13 +47,13 @@
     <div id="valideringPopUp" class="overlay">
         <div class="popup">
     		<h3>Vänligen bekräfta ditt köp</h3>
-    		<form id="form">
+    		<form name="sentForm" id="form" method="POST">
         	<div id="popupText">
-        	    <p id="firstName" namn="Förnamn">Förnamn:</p>
-        	    <p id="lastName" namn="Efternamn">Efternamn:</p>
-        	    <p id="postNumber" namn="Postnummer">Postnummer:</p>
-        	    <p id="ePostText" namn="Epostadress">E-mail:</p>
-        	    <p id="prisModellVal" namn="Prismodell">Prismodell:</p>
+        	    <p id="firstName">Förnamn:</p>
+        	    <p id="lastName">Efternamn:</p>
+        	    <p id="postNumber">Postnummer:</p>
+        	    <p id="ePostText">E-mail:</p>
+        	    <p id="prisModellVal">Prismodell:</p>
         	</div>
         	</form>
         	<button id="sendPopUp" type="button">Skicka formulär</button>
