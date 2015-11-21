@@ -77,8 +77,40 @@ h3 {
 
 #startbild {
 	float: right;
+	margin: 15px;
 }
 
 #photoofme {
 	float: right;
+	margin: 15px;
+}
+
+.minSprite {
+	background-image: url("../css/pics/sprite.png");
+	background-repeat: no-repeat;
+}
+
+#spriteStart {
+	background-position: 0 -48px;
+}
+#spriteStart:hover {
+	background-position: 0 0px;
+}
+#spriteLaberation {
+	background-position: 0 -336px;
+}
+#spriteLaberation:hover {
+	background-position: 0 -288px;
+}
+#spritePresentation {
+	background-position: 0 -143px;
+}
+#spritePresentation:hover {
+	background-position: 0 -95px;
+}
+#spriteKontakt {
+	background-position: 0 -241px;
+}
+#spriteKontakt:hover {
+	background-position:0 -193px;
 }
